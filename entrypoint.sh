@@ -1,3 +1,5 @@
-#!\/bin\/sh
-echo \"Hello, $1!\"
-echo \"::set-output name=time::$(date)\"
+#!/bin/sh -l
+
+echo "hello $1"
+
+echo "time=$(date)" >> $GITHUB_OUTPUT
