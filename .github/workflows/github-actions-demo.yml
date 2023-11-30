@@ -18,8 +18,8 @@ jobs:
       - name: Checkout repository
         uses: actions\/checkout@v2
       - name: Print trigger event name
-      #  run: echo \"Trigger event: ${{ github.event_name }}\"
+        run: echo "Trigger event:"
       - name: Print current branch name
-       # run: echo \"Branch name: ${{ github.ref }}\"
+        run: echo "Branch name:"
       - name: List all files
         run: ls -R
