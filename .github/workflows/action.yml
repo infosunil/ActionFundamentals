@@ -1,0 +1,13 @@
+name: 'Hello World Docker Action'
+description: 'A simple Docker action that greets someone and returns the current time.'
+inputs:
+  who-to-greet:
+    description: 'The name of the person to greet.'
+    required: false
+    default: 'world'
+outputs:
+  time:
+    description: 'The current time.'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
